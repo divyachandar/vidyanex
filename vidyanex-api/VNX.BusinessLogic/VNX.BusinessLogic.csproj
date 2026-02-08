@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\VNX.DTOs\VNX.DTOs.csproj" />
+    <ProjectReference Include="..\VNX.Entities\VNX.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

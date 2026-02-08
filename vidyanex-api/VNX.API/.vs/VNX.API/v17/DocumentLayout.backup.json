@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.API\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4D830B5-5C06-498E-A981-18A26C224B18}|..\\VNX.Repositories\\VNX.Repositories.csproj|d:\\projects\\vidyanex\\vidyanex-api\\vnx.repositories\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A55C77A1-4C1F-433B-950C-892EA1FFAC10}|..\\VNX.Entities\\VNX.Entities.csproj|d:\\projects\\vidyanex\\vidyanex-api\\vnx.entities\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1B09FB09-3005-4B63-A87E-EF82337F06C8}|..\\VNX.DTOs\\VNX.DTOs.csproj|d:\\projects\\vidyanex\\vidyanex-api\\vnx.dtos\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2118F00F-3F5D-4856-8688-438FCC1F4F1F}|..\\VNX.BusinessLogic\\VNX.BusinessLogic.csproj|d:\\projects\\vidyanex\\vidyanex-api\\vnx.businesslogic\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 62,
           "Children": [
             {
               "$type": "Bookmark",
@@ -258,6 +271,58 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Repositories\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\VNX.Repositories\\Class1.cs",
+              "ToolTip": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Repositories\\Class1.cs",
+              "RelativeToolTip": "..\\VNX.Repositories\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T15:42:48.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Entities\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\VNX.Entities\\Class1.cs",
+              "ToolTip": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Entities\\Class1.cs",
+              "RelativeToolTip": "..\\VNX.Entities\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T15:41:54.052Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.DTOs\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\VNX.DTOs\\Class1.cs",
+              "ToolTip": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.DTOs\\Class1.cs",
+              "RelativeToolTip": "..\\VNX.DTOs\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T15:41:25.331Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.BusinessLogic\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\VNX.BusinessLogic\\Class1.cs",
+              "ToolTip": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.BusinessLogic\\Class1.cs",
+              "RelativeToolTip": "..\\VNX.BusinessLogic\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-08T15:40:45.411Z",
+              "EditorCaption": ""
             }
           ]
         }

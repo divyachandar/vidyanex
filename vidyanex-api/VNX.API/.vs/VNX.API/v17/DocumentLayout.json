@@ -3,6 +3,13 @@
   "WorkspaceRootPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7EAB0EB4-765A-416A-9E31-851B1BC579A6}|VNX.API.csproj|d:\\projects\\vidyanex\\vidyanex-api\\vnx.api\\vnx.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7EAB0EB4-765A-416A-9E31-851B1BC579A6}|VNX.API.csproj|solutionrelative:vnx.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2118F00F-3F5D-4856-8688-438FCC1F4F1F}|..\\VNX.BusinessLogic\\VNX.BusinessLogic.csproj|d:\\projects\\vidyanex\\vidyanex-api\\vnx.businesslogic\\vnx.businesslogic.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E4D830B5-5C06-498E-A981-18A26C224B18}|..\\VNX.Repositories\\VNX.Repositories.csproj|d:\\projects\\vidyanex\\vidyanex-api\\vnx.repositories\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -22,8 +29,34 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 62,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VNX.API",
+              "DocumentMoniker": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.API\\VNX.API.csproj",
+              "RelativeDocumentMoniker": "VNX.API.csproj",
+              "ToolTip": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.API\\VNX.API.csproj",
+              "RelativeToolTip": "VNX.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-08T16:21:24.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VNX.BusinessLogic",
+              "DocumentMoniker": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.BusinessLogic\\VNX.BusinessLogic.csproj",
+              "RelativeDocumentMoniker": "..\\VNX.BusinessLogic\\VNX.BusinessLogic.csproj",
+              "ToolTip": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.BusinessLogic\\VNX.BusinessLogic.csproj",
+              "RelativeToolTip": "..\\VNX.BusinessLogic\\VNX.BusinessLogic.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-02-08T16:07:04.402Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -274,20 +307,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Repositories\\Class1.cs",
               "RelativeDocumentMoniker": "..\\VNX.Repositories\\Class1.cs",
               "ToolTip": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Repositories\\Class1.cs",
               "RelativeToolTip": "..\\VNX.Repositories\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-08T15:42:48.462Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Entities\\Class1.cs",
               "RelativeDocumentMoniker": "..\\VNX.Entities\\Class1.cs",
@@ -300,7 +333,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.DTOs\\Class1.cs",
               "RelativeDocumentMoniker": "..\\VNX.DTOs\\Class1.cs",
@@ -313,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.BusinessLogic\\Class1.cs",
               "RelativeDocumentMoniker": "..\\VNX.BusinessLogic\\Class1.cs",

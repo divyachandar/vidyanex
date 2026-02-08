@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VNX.Repositories")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d226ed45f3d6095005789de1bb4bbdbb7de641e8")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c06c852f9b287cd8f0c071f9e58ad0d089d7ab36")]
 [assembly: System.Reflection.AssemblyProductAttribute("VNX.Repositories")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VNX.Repositories")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

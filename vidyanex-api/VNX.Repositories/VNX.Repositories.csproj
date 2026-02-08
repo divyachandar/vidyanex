@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\VNX.Entities\VNX.Entities.csproj" />
+  </ItemGroup>
+
 </Project>
