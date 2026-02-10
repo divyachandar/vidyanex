@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj": {}
+    "c:\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj": {
+    "c:\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj",
+        "projectUniqueName": "c:\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj",
         "projectName": "VNX.DTOs",
-        "projectPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.DTOs\\obj\\",
+        "projectPath": "c:\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj",
+        "packagesPath": "C:\\Users\\SAILS-DM235\\.nuget\\packages\\",
+        "outputPath": "c:\\vidyanex\\vidyanex-api\\VNX.DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SAILS-DM235\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,7 +27,8 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.devexpress.com/xkVG7zCvlddcX3P9Jibnu6H6IkyEhzPGTQ4QivHvfG6xiIZDN7/api/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
@@ -66,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

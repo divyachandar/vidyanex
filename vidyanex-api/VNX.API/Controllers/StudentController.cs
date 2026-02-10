@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
+using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Data.SqlClient;
-using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
+using AutoMapper;
+using VNX.Repositories;
 using CMSAPI.Models;
-using Mapster;
+using VNX.DTOs;
 
 namespace CMSAPI.Controllers
 {
@@ -15,100 +15,62 @@ namespace CMSAPI.Controllers
     [ApiController]
     public class StudentController : ControllerBase
     {
-        private readonly IConfiguration _configuration;
+        private readonly AppDbContext _context;
+        private readonly IMapper _mapper;
 
-        public StudentController(IConfiguration configuration)
+        public StudentController(AppDbContext context, IMapper mapper)
         {
-            _configuration = configuration;
-        }
-
-        private SqlConnection GetConnection()
-        {
-            return new SqlConnection(
-                _configuration.GetConnectionString("DefaultConnection")
-            );
+            _context = context;
+            _mapper = mapper;
         }
 
         // GET: api/student
         [HttpGet]
-        public IActionResult GetAll()
+        public async Task<ActionResult<IEnumerable<StudentDto>>> GetAll()
         {
-            var students = new List<StudentDto>();
-
-            using var con = GetConnection();
-            using var cmd = new SqlCommand("sp_Student_GetAll", con);
-            cmd.CommandType = CommandType.StoredProcedure;
-
-            con.Open();
-            using var reader = cmd.ExecuteReader();
-
-            while (reader.Read())
-            {
-                students.Add(MapStudent(reader));
-            }
-
-            return Ok(students);
+            var students = await _context.Students.ToListAsync();
+            return Ok(_mapper.Map<IEnumerable<StudentDto>>(students));
         }
 
         // GET: api/student/5
         [HttpGet("{id}")]
-        public IActionResult GetById(int id)
+        public async Task<ActionResult<StudentDto>> GetById(int id)
         {
-            StudentDto student = null;
-
-            using var con = GetConnection();
-            using var cmd = new SqlCommand("sp_Student_GetById", con);
-            cmd.CommandType = CommandType.StoredProcedure;
-            cmd.Parameters.AddWithValue("@StudentId", id);
-
-            con.Open();
-            using var reader = cmd.ExecuteReader();
-
-            if (reader.Read())
-            {
-                student = MapStudent(reader);
-            }
+            var student = await _context.Students.FindAsync(id);
 
             if (student == null)
+            {
                 return NotFound();
-            var response=student.Adapt<StudentDto>();
+            }
 
-            return Ok(response);
+            return Ok(_mapper.Map<StudentDto>(student));
         }
 
         // POST: api/student
         [HttpPost]
-        public IActionResult Create(StudentDto dto)
+        public async Task<ActionResult> Create(StudentDto dto)
         {
             try
             {
-                using var con = GetConnection();
-                using var cmd = new SqlCommand("sp_Student_Insert", con);
-                cmd.CommandType = CommandType.StoredProcedure;
+                var student = _mapper.Map<Student>(dto);
+                
+                // Ensure CreatedAt is set if not handled by DB default
+                student.CreatedAt = DateTime.UtcNow;
 
-                cmd.Parameters.AddWithValue("@StudentCode", dto.StudentCode);
-                cmd.Parameters.AddWithValue("@FullName", dto.FullName);
-                cmd.Parameters.AddWithValue("@Email", dto.Email);
-                cmd.Parameters.AddWithValue("@Phone", dto.Phone);
-                cmd.Parameters.AddWithValue("@DateOfBirth", dto.DateOfBirth);
-                cmd.Parameters.AddWithValue("@Address", dto.Address ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@CampusId", dto.CampusId);
-                cmd.Parameters.AddWithValue("@DepartmentId", dto.DepartmentId);
-                cmd.Parameters.AddWithValue("@CourseId", dto.CourseId);
-                cmd.Parameters.AddWithValue("@Batch", dto.Batch);
-                cmd.Parameters.AddWithValue("@AdmissionDate", dto.AdmissionDate);
-                cmd.Parameters.AddWithValue("@GuardianName", dto.GuardianName ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@GuardianPhone", dto.GuardianPhone ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@GuardianEmail", dto.GuardianEmail ?? (object)DBNull.Value);
-
-                con.Open();
-                cmd.ExecuteNonQuery();
+                _context.Students.Add(student);
+                await _context.SaveChangesAsync();
 
                 return Ok(new { message = "Student created successfully" });
             }
-            catch (SqlException ex) when (ex.Number == 2627 || ex.Number == 2601)
+            catch (DbUpdateException ex)
             {
-                return Conflict(new { message = "A student with this Student Code or Email already exists." });
+                // Check for unique constraint violation (SQL Server error 2601 or 2627)
+                if (ex.InnerException is Microsoft.Data.SqlClient.SqlException sqlEx && 
+                    (sqlEx.Number == 2601 || sqlEx.Number == 2627))
+                {
+                   return Conflict(new { message = "A student with this Student Code or Email already exists." });
+                }
+                return StatusCode(500, new { message = $"An error occurred: {ex.Message}" });
             }
             catch (Exception ex)
             {
@@ -118,32 +80,41 @@ namespace CMSAPI.Controllers
 
         // PUT: api/student/5
         [HttpPut("{id}")]
-        public IActionResult Update(int id, StudentDto dto)
+        public async Task<IActionResult> Update(int id, StudentDto dto)
         {
+            if (id != dto.StudentId)
+            {
+                // If DTO doesn't have ID set, we might ignore this check or set it.
+                // Assuming ID in URL is authority.
+                dto.StudentId = id;
+            }
+
+            var existingStudent = await _context.Students.FindAsync(id);
+            if (existingStudent == null)
+            {
+                return NotFound();
+            }
+
             try
             {
-                using var con = GetConnection();
-                using var cmd = new SqlCommand("sp_Student_Update", con);
-                cmd.CommandType = CommandType.StoredProcedure;
+                // Map properties from DTO to existing entity
+                _mapper.Map(dto, existingStudent);
+                
+                existingStudent.UpdatedAt = DateTime.UtcNow;
 
-                cmd.Parameters.AddWithValue("@StudentId", id);
-                cmd.Parameters.AddWithValue("@FullName", dto.FullName);
-                cmd.Parameters.AddWithValue("@Phone", dto.Phone);
-                cmd.Parameters.AddWithValue("@Address", dto.Address ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@DepartmentId", dto.DepartmentId);
-                cmd.Parameters.AddWithValue("@CourseId", dto.CourseId);
-                cmd.Parameters.AddWithValue("@GuardianName", dto.GuardianName ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@GuardianPhone", dto.GuardianPhone ?? (object)DBNull.Value);
-                cmd.Parameters.AddWithValue("@GuardianEmail", dto.GuardianEmail ?? (object)DBNull.Value);
-
-                con.Open();
-                cmd.ExecuteNonQuery();
+                _context.Entry(existingStudent).State = EntityState.Modified;
+                await _context.SaveChangesAsync();
 
                 return Ok(new { message = "Student updated successfully" });
             }
-            catch (SqlException ex) when (ex.Number == 2627 || ex.Number == 2601)
+            catch (DbUpdateException ex)
             {
-                return Conflict(new { message = "A student with this Email already exists." });
+                if (ex.InnerException is Microsoft.Data.SqlClient.SqlException sqlEx && 
+                    (sqlEx.Number == 2601 || sqlEx.Number == 2627))
+                {
+                   return Conflict(new { message = "A student with this Email already exists." });
+                }
+                return StatusCode(500, new { message = $"An error occurred: {ex.Message}" });
             }
             catch (Exception ex)
             {
@@ -153,70 +124,43 @@ namespace CMSAPI.Controllers
 
         // PATCH: api/student/status/5
         [HttpPatch("status/{id}")]
-        public IActionResult UpdateStatus(int id, [FromQuery] string status)
+        public async Task<IActionResult> UpdateStatus(int id, [FromQuery] string status)
         {
-            using var con = GetConnection();
-            using var cmd = new SqlCommand("sp_Student_UpdateStatus", con);
-            cmd.CommandType = CommandType.StoredProcedure;
+            var student = await _context.Students.FindAsync(id);
+            if (student == null)
+            {
+                return NotFound();
+            }
 
-            cmd.Parameters.AddWithValue("@StudentId", id);
-            cmd.Parameters.AddWithValue("@Status", status);
+            student.Status = status;
+            student.UpdatedAt = DateTime.UtcNow;
 
-            con.Open();
-            cmd.ExecuteNonQuery();
+            await _context.SaveChangesAsync();
 
             return Ok(new { message = "Status updated successfully" });
         }
 
         // DELETE: api/student/5
         [HttpDelete("{id}")]
-        public IActionResult Delete(int id)
+        public async Task<IActionResult> Delete(int id)
         {
+            var student = await _context.Students.FindAsync(id);
+            if (student == null)
+            {
+                return NotFound();
+            }
+
             try
             {
-                using var con = GetConnection();
-                using var cmd = new SqlCommand("sp_Student_Delete", con);
-                cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@StudentId", id);
-
-                con.Open();
-                cmd.ExecuteNonQuery();
+                _context.Students.Remove(student);
+                await _context.SaveChangesAsync();
 
                 return Ok(new { message = "Student deleted successfully" });
-            }
-            catch (SqlException ex)
-            {
-                // Return specific database error (e.g., constraint violations)
-                return StatusCode(500, new { message = $"Database Error: {ex.Message}" });
             }
             catch (Exception ex)
             {
                 return StatusCode(500, new { message = $"An error occurred: {ex.Message}" });
             }
-        }
-
-        // Helper Mapper
-        private StudentDto MapStudent(SqlDataReader reader)
-        {
-            return new StudentDto
-            {
-                StudentId = (int)reader["StudentId"],
-                StudentCode = reader["StudentCode"].ToString(),
-                FullName = reader["FullName"].ToString(),
-                Email = reader["Email"].ToString(),
-                Phone = reader["Phone"].ToString(),
-                DateOfBirth = (DateTime)reader["DateOfBirth"],
-                Address = reader["Address"] as string,
-                CampusId = (int)reader["CampusId"],
-                DepartmentId = (int)reader["DepartmentId"],
-                CourseId = (int)reader["CourseId"],
-                Batch = reader["Batch"].ToString(),
-                AdmissionDate = (DateTime)reader["AdmissionDate"],
-                Status = reader["Status"].ToString(),
-                GuardianName = reader["GuardianName"] as string,
-                GuardianPhone = reader["GuardianPhone"] as string,
-                GuardianEmail = reader["GuardianEmail"] as string
-            };
         }
     }
 }

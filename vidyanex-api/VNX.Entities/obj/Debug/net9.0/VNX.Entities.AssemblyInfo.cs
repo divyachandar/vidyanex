@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VNX.Entities")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f842d9b6dd787039ceec8015bb3aa71bec45bd74")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34ec028de47f14a4a023dd1a26192fe7c9743562")]
 [assembly: System.Reflection.AssemblyProductAttribute("VNX.Entities")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VNX.Entities")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

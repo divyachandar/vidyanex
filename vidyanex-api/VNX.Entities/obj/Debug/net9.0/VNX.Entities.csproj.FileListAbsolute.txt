@@ -1,0 +1,12 @@
+c:\vidyanex\vidyanex-api\VNX.Entities\bin\Debug\net9.0\VNX.Entities.deps.json
+c:\vidyanex\vidyanex-api\VNX.Entities\bin\Debug\net9.0\VNX.Entities.dll
+c:\vidyanex\vidyanex-api\VNX.Entities\bin\Debug\net9.0\VNX.Entities.pdb
+c:\vidyanex\vidyanex-api\VNX.Entities\obj\Debug\net9.0\VNX.Entities.GeneratedMSBuildEditorConfig.editorconfig
+c:\vidyanex\vidyanex-api\VNX.Entities\obj\Debug\net9.0\VNX.Entities.AssemblyInfoInputs.cache
+c:\vidyanex\vidyanex-api\VNX.Entities\obj\Debug\net9.0\VNX.Entities.AssemblyInfo.cs
+c:\vidyanex\vidyanex-api\VNX.Entities\obj\Debug\net9.0\VNX.Entities.csproj.CoreCompileInputs.cache
+c:\vidyanex\vidyanex-api\VNX.Entities\obj\Debug\net9.0\VNX.Entities.sourcelink.json
+c:\vidyanex\vidyanex-api\VNX.Entities\obj\Debug\net9.0\VNX.Entities.dll
+c:\vidyanex\vidyanex-api\VNX.Entities\obj\Debug\net9.0\refint\VNX.Entities.dll
+c:\vidyanex\vidyanex-api\VNX.Entities\obj\Debug\net9.0\VNX.Entities.pdb
+c:\vidyanex\vidyanex-api\VNX.Entities\obj\Debug\net9.0\ref\VNX.Entities.dll
