@@ -1,0 +1,9 @@
+D:\Projects\vidyanex\vidyanex-api\VNX.API\obj\Debug\net9.0\VNX.API.csproj.AssemblyReference.cache
+D:\Projects\vidyanex\vidyanex-api\VNX.API\obj\Debug\net9.0\rpswa.dswa.cache.json
+D:\Projects\vidyanex\vidyanex-api\VNX.API\obj\Debug\net9.0\VNX.API.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\vidyanex\vidyanex-api\VNX.API\obj\Debug\net9.0\VNX.API.AssemblyInfoInputs.cache
+D:\Projects\vidyanex\vidyanex-api\VNX.API\obj\Debug\net9.0\VNX.API.AssemblyInfo.cs
+D:\Projects\vidyanex\vidyanex-api\VNX.API\obj\Debug\net9.0\VNX.API.csproj.CoreCompileInputs.cache
+D:\Projects\vidyanex\vidyanex-api\VNX.API\obj\Debug\net9.0\VNX.API.MvcApplicationPartsAssemblyInfo.cs
+D:\Projects\vidyanex\vidyanex-api\VNX.API\obj\Debug\net9.0\VNX.API.MvcApplicationPartsAssemblyInfo.cache
+D:\Projects\vidyanex\vidyanex-api\VNX.API\obj\Debug\net9.0\VNX.API.sourcelink.json

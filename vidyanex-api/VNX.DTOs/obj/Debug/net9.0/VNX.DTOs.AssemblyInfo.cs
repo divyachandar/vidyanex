@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VNX.DTOs")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+702db573a2830be4345d14fccc49a65a4400f768")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+54c6e39db6db1c4946ebf184caf5c121208d75f6")]
 [assembly: System.Reflection.AssemblyProductAttribute("VNX.DTOs")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VNX.DTOs")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
