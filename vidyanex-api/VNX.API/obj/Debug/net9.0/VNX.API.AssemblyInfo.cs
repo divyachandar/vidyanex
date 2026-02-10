@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VNX.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c06c852f9b287cd8f0c071f9e58ad0d089d7ab36")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22517ac5af70c9d985b93b579b8bc9bd911348cf")]
 [assembly: System.Reflection.AssemblyProductAttribute("VNX.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VNX.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
