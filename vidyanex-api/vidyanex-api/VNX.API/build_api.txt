@@ -1,0 +1,16 @@
+﻿  Determining projects to restore...
+  All projects are up-to-date for restore.
+  VNX.Entities -> c:\vidyanex\vidyanex-api\VNX.Entities\bin\Debug\net9.0\VNX.Entities.dll
+  VNX.Repositories -> c:\vidyanex\vidyanex-api\VNX.Repositories\bin\Debug\net9.0\VNX.Repositories.dll
+  VNX.DTOs -> c:\vidyanex\vidyanex-api\VNX.DTOs\bin\Debug\net9.0\VNX.DTOs.dll
+c:\vidyanex\vidyanex-api\VNX.API\Controllers\StudentController.cs(10,7): error CS0246: The type or namespace name 'Mapster' could not be found (are you missing a using directive or an assembly reference?) [c:\vidyanex\vidyanex-api\VNX.API\VNX.API.csproj]
+
+Build FAILED.
+
+c:\vidyanex\vidyanex-api\VNX.API\Controllers\StudentController.cs(10,7): error CS0246: The type or namespace name 'Mapster' could not be found (are you missing a using directive or an assembly reference?) [c:\vidyanex\vidyanex-api\VNX.API\VNX.API.csproj]
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:02.72
+
+Workload updates are available. Run `dotnet workload list` for more information.
