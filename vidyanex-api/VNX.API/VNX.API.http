@@ -1,15 +1,77 @@
-@VNX.API_HostAddress = http://localhost:5176
+@VNX.API_HostAddress = http://localhost:5011
 
 GET {{VNX.API_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
 ### Get all students
-GET {{VNX.API_HostAddress}}/student
+GET {{VNX.API_HostAddress}}/api/student
 Accept: application/json
 
 ###
 
 ### Get student by id
 GET {{VNX.API_HostAddress}}/api/student/1
+Accept: application/json
+
+###
+
+### Create student
+POST {{VNX.API_HostAddress}}/api/student
+Content-Type: application/json
+
+{
+  "studentCode": "S12345",
+  "fullName": "John Doe",
+  "email": "john.doe@example.com",
+  "phone": "1234567890",
+  "dateOfBirth": "2000-01-01T00:00:00",
+  "address": "123 Main St",
+  "campusId": 1,
+  "departmentId": 1,
+  "courseId": 1,
+  "batch": "2022-2026",
+  "admissionDate": "2022-01-01T00:00:00",
+  "status": "Active",
+  "guardianName": "Jane Doe",
+  "guardianPhone": "0987654321",
+  "guardianEmail": "jane.doe@example.com"
+}
+
+###
+
+### Update student
+PUT {{VNX.API_HostAddress}}/api/student/1
+Content-Type: application/json
+
+{
+  "studentId": 1,
+  "studentCode": "S12345-UPDATED",
+  "fullName": "John Doe Updated",
+  "email": "john.doe.updated@example.com",
+  "phone": "1234567890",
+  "dateOfBirth": "2000-01-01T00:00:00",
+  "address": "123 Main St Updated",
+  "campusId": 1,
+  "departmentId": 1,
+  "courseId": 1,
+  "batch": "2022-2026",
+  "admissionDate": "2022-01-01T00:00:00",
+  "status": "Active",
+  "guardianName": "Jane Doe",
+  "guardianPhone": "0987654321",
+  "guardianEmail": "jane.doe@example.com"
+}
+
+###
+
+### Update student status
+PATCH {{VNX.API_HostAddress}}/api/student/status/1?status=Inactive
+Accept: application/json
+
+###
+
+### Delete student
+DELETE {{VNX.API_HostAddress}}/api/student/1
 Accept: application/json
