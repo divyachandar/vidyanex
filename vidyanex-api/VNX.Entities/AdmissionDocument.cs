@@ -5,7 +5,7 @@ namespace CMSAPI.Models;
 
 public partial class AdmissionDocument
 {
-    public int DocumentId { get; set; }
+    public int Id { get; set; }
 
     public Guid ApplicationId { get; set; }
 

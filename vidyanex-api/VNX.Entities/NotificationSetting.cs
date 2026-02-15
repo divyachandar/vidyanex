@@ -5,7 +5,7 @@ namespace CMSAPI.Models;
 
 public partial class NotificationSetting
 {
-    public int NotificationSettingId { get; set; }
+    public int Id { get; set; }
 
     public bool EnableNotifications { get; set; }
 

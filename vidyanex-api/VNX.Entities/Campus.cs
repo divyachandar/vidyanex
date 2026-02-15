@@ -5,7 +5,7 @@ namespace CMSAPI.Models;
 
 public partial class Campus
 {
-    public int CampusId { get; set; }
+    public int Id { get; set; }
 
     public string CampusName { get; set; } = null!;
 

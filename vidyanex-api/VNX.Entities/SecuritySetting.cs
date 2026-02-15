@@ -5,7 +5,7 @@ namespace CMSAPI.Models;
 
 public partial class SecuritySetting
 {
-    public int SecuritySettingId { get; set; }
+    public int Id { get; set; }
 
     public bool EnableTwoFactorAuth { get; set; }
 

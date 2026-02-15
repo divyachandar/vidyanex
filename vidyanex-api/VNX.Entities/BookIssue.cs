@@ -5,7 +5,7 @@ namespace CMSAPI.Models;
 
 public partial class BookIssue
 {
-    public Guid BookIssueId { get; set; }
+    public Guid Id { get; set; }
 
     public Guid BookId { get; set; }
 

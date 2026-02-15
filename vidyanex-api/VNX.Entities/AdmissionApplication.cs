@@ -5,7 +5,7 @@ namespace CMSAPI.Models;
 
 public partial class AdmissionApplication
 {
-    public Guid ApplicationId { get; set; }
+    public Guid Id { get; set; }
 
     public string ApplicationNumber { get; set; } = null!;
 

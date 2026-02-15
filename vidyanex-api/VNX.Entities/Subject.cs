@@ -5,7 +5,7 @@ namespace CMSAPI.Models;
 
 public partial class Subject
 {
-    public int SubjectId { get; set; }
+    public int Id { get; set; }
 
     public string SubjectName { get; set; } = null!;
 

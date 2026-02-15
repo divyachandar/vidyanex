@@ -38,9 +38,9 @@ namespace VNX.Repositories
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<AdmissionApplication>().HasKey(e => e.ApplicationId);
-            modelBuilder.Entity<AdmissionDocument>().HasKey(e => e.DocumentId);
-            modelBuilder.Entity<AdmissionStatusHistory>().HasKey(e => e.HistoryId);
+            modelBuilder.Entity<AdmissionApplication>().HasKey(e => e.Id);
+            modelBuilder.Entity<AdmissionDocument>().HasKey(e => e.Id);
+            modelBuilder.Entity<AdmissionStatusHistory>().HasKey(e => e.Id);
 
             modelBuilder.Entity<VwStudentDistribution>().HasNoKey().ToView("vw_StudentDistribution");
             modelBuilder.Entity<VwStudentTransport>().HasNoKey().ToView("vw_StudentTransport");

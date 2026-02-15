@@ -5,7 +5,7 @@ namespace CMSAPI.Models;
 
 public partial class FeeStructure
 {
-    public int FeeStructureId { get; set; }
+    public int Id { get; set; }
 
     public int CourseId { get; set; }
 

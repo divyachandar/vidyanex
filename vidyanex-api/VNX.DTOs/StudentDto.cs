@@ -4,7 +4,7 @@ namespace CMSAPI.Models;
 
 public class StudentDto
 {
-    public int StudentId { get; set; }
+    public int? Id { get; set; }
     public string StudentCode { get; set; } = string.Empty;
     public string FullName { get; set; } = string.Empty;
     public string Email { get; set; } = string.Empty;

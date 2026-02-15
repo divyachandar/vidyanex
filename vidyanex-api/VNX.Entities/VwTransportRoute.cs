@@ -5,7 +5,7 @@ namespace CMSAPI.Models;
 
 public partial class VwTransportRoute
 {
-    public int RouteId { get; set; }
+    public int? Id { get; set; }
 
     public string RouteName { get; set; } = null!;
 

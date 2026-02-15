@@ -5,7 +5,7 @@ namespace CMSAPI.Models;
 
 public partial class vw_StudentTransport
 {
-    public int AssignmentId { get; set; }
+    public int Id { get; set; }
 
     public string StudentId { get; set; } = null!;
 

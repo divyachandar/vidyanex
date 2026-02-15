@@ -5,7 +5,7 @@ namespace CMSAPI.Models;
 
 public partial class TransportRouteStop
 {
-    public int StopId { get; set; }
+    public int Id { get; set; }
 
     public int RouteId { get; set; }
 

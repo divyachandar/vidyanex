@@ -5,7 +5,7 @@ namespace CMSAPI.Models;
 
 public partial class AdmissionStatusHistory
 {
-    public int HistoryId { get; set; }
+    public int Id { get; set; }
 
     public Guid ApplicationId { get; set; }
 

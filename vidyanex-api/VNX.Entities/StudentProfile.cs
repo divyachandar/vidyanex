@@ -5,7 +5,7 @@ namespace CMSAPI.Models;
 
 public partial class StudentProfile
 {
-    public int StudentProfileId { get; set; }
+    public int Id { get; set; }
 
     public int UserId { get; set; }
 
