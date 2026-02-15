@@ -12,6 +12,7 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "Microsoft.AspNetCore.OpenApi": "9.0.11",
           "Microsoft.EntityFrameworkCore.Design": "9.0.0",
+          "VNX.BusinessLogic": "1.0.0",
           "VNX.DTOs": "1.0.0",
           "VNX.Repositories": "1.0.0"
         },
@@ -990,6 +991,20 @@
           }
         }
       },
+      "VNX.BusinessLogic/1.0.0": {
+        "dependencies": {
+          "AutoMapper": "16.0.0",
+          "VNX.DTOs": "1.0.0",
+          "VNX.Entities": "1.0.0",
+          "VNX.Repositories": "1.0.0"
+        },
+        "runtime": {
+          "VNX.BusinessLogic.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "VNX.DTOs/1.0.0": {
         "runtime": {
           "VNX.DTOs.dll": {
@@ -1564,6 +1579,11 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "VNX.BusinessLogic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "VNX.DTOs/1.0.0": {
       "type": "project",

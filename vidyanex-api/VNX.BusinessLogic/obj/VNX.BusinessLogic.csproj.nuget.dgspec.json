@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\vidyanex\\vidyanex-api\\VNX.BusinessLogic\\VNX.BusinessLogic.csproj": {}
+    "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.BusinessLogic\\VNX.BusinessLogic.csproj": {}
   },
   "projects": {
-    "C:\\vidyanex\\vidyanex-api\\VNX.BusinessLogic\\VNX.BusinessLogic.csproj": {
+    "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.BusinessLogic\\VNX.BusinessLogic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\vidyanex\\vidyanex-api\\VNX.BusinessLogic\\VNX.BusinessLogic.csproj",
+        "projectUniqueName": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.BusinessLogic\\VNX.BusinessLogic.csproj",
         "projectName": "VNX.BusinessLogic",
-        "projectPath": "C:\\vidyanex\\vidyanex-api\\VNX.BusinessLogic\\VNX.BusinessLogic.csproj",
-        "packagesPath": "C:\\Users\\SAILS-DM235\\.nuget\\packages\\",
-        "outputPath": "C:\\vidyanex\\vidyanex-api\\VNX.BusinessLogic\\obj\\",
+        "projectPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.BusinessLogic\\VNX.BusinessLogic.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.BusinessLogic\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SAILS-DM235\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -27,18 +27,20 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/xkVG7zCvlddcX3P9Jibnu6H6IkyEhzPGTQ4QivHvfG6xiIZDN7/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj": {
-                "projectPath": "C:\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj"
+              "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj": {
+                "projectPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj"
               },
-              "C:\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj": {
-                "projectPath": "C:\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj"
+              "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj": {
+                "projectPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj"
+              },
+              "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Repositories\\VNX.Repositories.csproj": {
+                "projectPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Repositories\\VNX.Repositories.csproj"
               }
             }
           }
@@ -58,6 +60,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[16.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -74,24 +82,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj": {
+    "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj",
+        "projectUniqueName": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj",
         "projectName": "VNX.DTOs",
-        "projectPath": "C:\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj",
-        "packagesPath": "C:\\Users\\SAILS-DM235\\.nuget\\packages\\",
-        "outputPath": "C:\\vidyanex\\vidyanex-api\\VNX.DTOs\\obj\\",
+        "projectPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.DTOs\\VNX.DTOs.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.DTOs\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SAILS-DM235\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -101,8 +109,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/xkVG7zCvlddcX3P9Jibnu6H6IkyEhzPGTQ4QivHvfG6xiIZDN7/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
@@ -141,24 +148,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj": {
+    "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj",
+        "projectUniqueName": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj",
         "projectName": "VNX.Entities",
-        "projectPath": "C:\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj",
-        "packagesPath": "C:\\Users\\SAILS-DM235\\.nuget\\packages\\",
-        "outputPath": "C:\\vidyanex\\vidyanex-api\\VNX.Entities\\obj\\",
+        "projectPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\SAILS-DM235\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -168,8 +175,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files\\dotnet\\library-packs": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.devexpress.com/xkVG7zCvlddcX3P9Jibnu6H6IkyEhzPGTQ4QivHvfG6xiIZDN7/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net9.0": {
@@ -208,7 +214,89 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Repositories\\VNX.Repositories.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Repositories\\VNX.Repositories.csproj",
+        "projectName": "VNX.Repositories",
+        "projectPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Repositories\\VNX.Repositories.csproj",
+        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+        "outputPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Repositories\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj": {
+                "projectPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

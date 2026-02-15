@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\VNX.DTOs\VNX.DTOs.csproj" />
     <ProjectReference Include="..\VNX.Repositories\VNX.Repositories.csproj" />
+    <ProjectReference Include="..\VNX.BusinessLogic\VNX.BusinessLogic.csproj" />
   </ItemGroup>
 
 </Project>

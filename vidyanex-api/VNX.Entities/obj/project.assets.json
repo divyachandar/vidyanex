@@ -8,23 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\SAILS-DM235\\.nuget\\packages\\": {},
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj",
+      "projectUniqueName": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj",
       "projectName": "VNX.Entities",
-      "projectPath": "C:\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj",
-      "packagesPath": "C:\\Users\\SAILS-DM235\\.nuget\\packages\\",
-      "outputPath": "C:\\vidyanex\\vidyanex-api\\VNX.Entities\\obj\\",
+      "projectPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Entities\\VNX.Entities.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\vidyanex\\vidyanex-api\\VNX.Entities\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\SAILS-DM235\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -34,8 +34,7 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "C:\\Program Files\\dotnet\\library-packs": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.devexpress.com/xkVG7zCvlddcX3P9Jibnu6H6IkyEhzPGTQ4QivHvfG6xiIZDN7/api/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net9.0": {
@@ -74,7 +73,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.308/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
