@@ -71,9 +71,9 @@ namespace CMSAPI.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, StudentDto dto)
         {
-            if (id != dto.StudentId)
+            if (id != dto.Id)
             {
-                dto.StudentId = id;
+                dto.Id = id;
             }
 
             try

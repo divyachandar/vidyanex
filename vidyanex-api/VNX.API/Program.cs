@@ -54,7 +54,7 @@ app.UseExceptionHandler(errorApp =>
         var exceptionHandlerPathFeature = context.Features.Get<Microsoft.AspNetCore.Diagnostics.IExceptionHandlerPathFeature>();
         if (exceptionHandlerPathFeature?.Error is Exception exception)
         {
-            Console.WriteLine($"Error: {exception}");
+            await Task.Run(() => Console.WriteLine($"Error: {exception}"));
         }
     });
 });
