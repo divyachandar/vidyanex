@@ -15,7 +15,7 @@ public partial class Student
 
     public string Phone { get; set; } = null!;
 
-    public DateOnly DateOfBirth { get; set; }
+    public DateTime DateOfBirth { get; set; }
 
     public string? Address { get; set; }
 
@@ -27,7 +27,7 @@ public partial class Student
 
     public string Batch { get; set; } = null!;
 
-    public DateOnly AdmissionDate { get; set; }
+    public DateTime AdmissionDate { get; set; }
 
     public string Status { get; set; } = null!;
 
