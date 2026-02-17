@@ -117,3 +117,6 @@ vidyanex-api/VNX.API/obj/Debug/net9.0/VNX.API.AssemblyInfo.cs
 /vidyanex-api/VNX.Entities/obj/Debug/net9.0/VNX.Entities.dll
 /vidyanex-api/VNX.Repositories/obj/Debug/net9.0/ref/VNX.Repositories.dll
 /vidyanex-api/VNX.Repositories/obj/Debug/net9.0/refint/VNX.Repositories.dll
+/vidyanex-api/VNX.API/obj/project.assets.json
+/vidyanex-api/VNX.API/obj/project.nuget.cache
+/vidyanex-api/VNX.API/obj/VNX.API.csproj.nuget.dgspec.json
