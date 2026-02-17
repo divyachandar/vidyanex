@@ -50,3 +50,8 @@ vidyanex-api/VNX.API/obj/Debug/net9.0/VNX.API.AssemblyInfo.cs
 /vidyanex-api/VNX.API/bin/Debug/net9.0/VNX.Repositories.dll
 /vidyanex-api/VNX.API/bin/Debug/net9.0/VNX.Repositories.pdb
 /vidyanex-api/VNX.API/obj/Debug/net9.0/ref/VNX.API.dll
+/vidyanex-api/VNX.API/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/vidyanex-api/VNX.API/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/vidyanex-api/VNX.API/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/vidyanex-api/VNX.API/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/vidyanex-api/VNX.API/obj/Debug/net9.0/refint/VNX.API.dll
