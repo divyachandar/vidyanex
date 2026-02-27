@@ -1,0 +1,13 @@
+vayuvenk@t
+Vayuvenk@t
+campus1.database.windows.net
+vayuvenk@t2013
+Vayuvenk@t2013
+
+connectionstring:
+Server=tcp:campus1.database.windows.net,1433;Initial Catalog=CampusAdmissionDB;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;Authentication="Active Directory Default";
+
+
+ "ConnectionStrings": {
+   "DefaultConnection": "Data Source=campus1.database.windows.net;Initial Catalog=CampusAdmissionDB;User ID=server;Password=Vayuvenk@t;Encrypt=True;Trust Server Certificate=True"
+ }

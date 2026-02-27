@@ -218,7 +218,7 @@ export const Students: React.FC = () => {
       // Map backend data (StudentDto) to frontend interface (Student)
       const mappedStudents: Student[] = Array.isArray(response.data)
         ? response.data.map((item: any) => ({
-          id: item.studentId?.toString() || '',
+          id: item.id?.toString() || '',
           studentId: item.studentCode || '',
           name: item.fullName || '',
           email: item.email || '',
