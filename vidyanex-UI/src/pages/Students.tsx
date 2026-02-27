@@ -41,6 +41,7 @@ export const Students: React.FC = () => {
   const [students, setStudents] = useState<Student[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+  const [success, setSuccess] = useState<string | null>(null);
   const [viewMode, setViewMode] = useState<'table' | 'card'>('table');
   const [searchTerm, setSearchTerm] = useState('');
   const [openDialog, setOpenDialog] = useState(false);
@@ -141,7 +142,10 @@ export const Students: React.FC = () => {
     if (!studentToDelete) return;
     try {
       setLoading(true);
+      setSuccess(null);
+      setError(null);
       await axios.delete(`http://localhost:5011/api/student/${studentToDelete.id}`);
+      setSuccess('Student deleted successfully');
       setOpenDeleteDialog(false);
       setStudentToDelete(null);
       fetchStudents();
@@ -167,6 +171,7 @@ export const Students: React.FC = () => {
     try {
       setLoading(true);
       setError(null);
+      setSuccess(null);
       const payload = {
         StudentCode: formData.studentCode,
         FullName: formData.fullName,
@@ -189,8 +194,10 @@ export const Students: React.FC = () => {
 
       if (isEditing && editingId) {
         await axios.put(`http://localhost:5011/api/student/${editingId}`, payload);
+        setSuccess('Updation successfully completed');
       } else {
         await axios.post('http://localhost:5011/api/student', payload);
+        setSuccess('Student added successfully');
       }
 
       setOpenAddDialog(false);
@@ -310,6 +317,12 @@ export const Students: React.FC = () => {
       {error && (
         <Alert severity="error" sx={{ mb: 3 }} onClose={() => setError(null)}>
           {error}
+        </Alert>
+      )}
+
+      {success && (
+        <Alert severity="success" sx={{ mb: 3 }} onClose={() => setSuccess(null)}>
+          {success}
         </Alert>
       )}
 
